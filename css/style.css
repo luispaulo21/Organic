@@ -1,0 +1,289 @@
+/*RESET*/
+*,
+body,
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: normal;
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+svg {
+	width: 20px;
+	height: 20px;
+}
+
+/*Importação de fontes*/
+@font-face {
+	font-family: "Roboto";
+	src: local(Roboto), url('../fontes/Roboto-Regular.ttf');
+}
+
+/*Estilização do cabeçalho principal - geral*/
+.cabecalho__principal {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background: url('../imagens/fundo-direita.jpg') no-repeat top right / 50%;
+}
+
+/*Cabecalho principal - menu lateral*/
+.cabecalho__principal .cabecalho__menuLateral {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	max-width: 50px;
+	padding: 18px 0;
+	background: #3D3D3D;
+}
+
+.cabecalho__principal .cabecalho__menuLateral .menuLateral__outros {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.cabecalho__principal .cabecalho__menuLateral .menuLateral__outros .menuLateral__redes li {
+	margin: 15px;
+}
+
+.cabecalho__principal .cabecalho__menuLateral .menuLateral__outros .linha-divisora {
+	display: block;
+	width: 2px;
+	height: 72px;
+	background: #4C4C4C;
+	margin: 28px;
+}
+
+.cabecalho__principal .cabecalho__menuLateral .menuLateral__opcoes .icone {
+	display: flex;
+	flex-wrap: wrap;
+	width: 30px;
+}
+
+.cabecalho__principal .cabecalho__menuLateral .menuLateral__opcoes .circle {
+	display: block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	margin: 3px;
+	background: #fff;
+}
+
+/*Cabecalho principal - banner geral*/
+.cabecalho__banner {
+	flex: 1;
+	position: relative;
+	padding: 18px 16px 18px 7px;
+}
+
+/*Cabecalho principal - menu topo */
+.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo p {
+	flex: 1;
+	margin-bottom: 10px;
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo p a {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	color: #5A7167;
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1;
+
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo ul li {
+	margin: 0 20px;
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo ul a {
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	padding: 5px;
+}
+
+/*Cabecalho principal - descricao do banner*/
+.cabecalho__principal .banner__descricao {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 31px 50px 31px;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 40px;
+	margin-bottom: 30px;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1,
+.cabecalho__principal .banner__descricao .descricao__coluna2 {
+	flex: 1 1 350px;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 h1 {
+	font-size: 75px;
+	line-height: 85px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	color: #3D3D3D;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 h2 {
+	font-size: 18px;
+	line-height: 27px;
+	font-family: "Roboto", sans-serif;
+	padding: 20px 0;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 div {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 div button {
+	padding: 8px 16px;
+	background: #FEDF36;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 div button,
+.cabecalho__principal .banner__descricao .descricao__coluna1 div a  {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 div a {
+	margin: 0 18px 0 30px;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna1 div .linha-divisora {
+	display: inline-block;
+	width: 128px;
+	height: 2px;
+	background: #B4B4B4;
+	margin: 20px 0;
+}
+
+@media (max-width: 506px) {
+	.cabecalho__principal .banner__descricao .descricao__coluna1 div .linha-divisora {
+		width: 100%;
+	}
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna2 {
+	padding-left: 40px;
+}
+
+.cabecalho__principal .banner__descricao .descricao__coluna2 img {
+	width: 100%;
+}
+
+/*Cabecalho principal - Navegação inferior*/
+.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: calc(50% - 25px);
+	left: 30px;
+	bottom: 20px;
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior .navegacaoInferior__paginas {
+	display: flex;
+	align-items: center;
+}
+
+.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior .navegacaoInferior__paginas span {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+
+.cabecalho__principal .cabecalho__navegacaoInferior .navegacaoInferior__paginas .linha-divisora {
+	display: inline-block;
+	width: 56px;
+	height: 2px;
+	background: #B4B4B4;
+	margin: 0 10px;
+}
+
+
+.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior ul {
+	display: flex;
+}
+
+.cabecalho__principal .cabecalho__navegacaoInferior .navegacaoInferior__controles .anterior {
+	background: #FBE132;
+}
+
+.cabecalho__principal .cabecalho__navegacaoInferior .navegacaoInferior__controles .proximo {
+	background: #FFFFFF;
+}
+
+.cabecalho__principal .cabecalho__navegacaoInferior .navegacaoInferior__controles .anterior,
+.cabecalho__principal .cabecalho__navegacaoInferior .navegacaoInferior__controles .proximo {
+	padding: 5px;
+}
+
+@media (max-width: 834px) {
+	.cabecalho__principal .banner__descricao .descricao__coluna2 {
+		padding-left: 0;
+	}
+	
+	.cabecalho__principal .banner__descricao .descricao__coluna2 img {
+		width: 50%;
+	}
+}
