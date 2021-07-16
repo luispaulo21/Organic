@@ -330,6 +330,10 @@ svg {
 		height: 100vh;
 	}
 
+	.cabecalho__banner {
+		overflow: hidden;
+	}
+
 	.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo {
 		flex-direction: column;
 		align-items: center;
@@ -360,10 +364,21 @@ svg {
 }
 
 @media (max-width: 506px) {
+	.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo .menu-desktop {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		z-index: 99;
+	}
+
+	.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo .menu-desktop li {
+		margin: 10px 20px;
+	}
+
 	.cabecalho__principal .banner__descricao .descricao__coluna1 {
 		padding-top: 40px;
 	}
 
+	.cabecalho__principal .banner__descricao .descricao__coluna1 h1,
 	.cabecalho__principal .banner__descricao .descricao__coluna1 h2 {
 		z-index: 99;
 	}
@@ -387,5 +402,30 @@ svg {
 		flex-direction: row;
 		width: 80%;
 		left: 60px;
+	}
+}
+
+@media (max-width: 346px) {
+	.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo .menu-desktop {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo .menu-desktop li {
+		margin: 0;
+	}
+
+	.cabecalho__principal .cabecalho__banner .cabecalho__menuTopo .menu-desktop li a {
+		display: block;
+		padding: 5px 20px;
+	}
+
+	.cabecalho__principal .banner__descricao .descricao__coluna1 {
+		padding: 0;
+	}
+
+	.cabecalho__principal .banner__descricao .descricao__coluna1 div .linha-divisora {
+		display: none;
 	}
 }
