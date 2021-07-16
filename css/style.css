@@ -279,11 +279,29 @@ svg {
 }
 
 @media (max-width: 834px) {
+	.cabecalho__principal {
+		background-size: 50% 100%;
+	}
 	.cabecalho__principal .banner__descricao .descricao__coluna2 {
 		padding-left: 0;
 	}
-	
+
 	.cabecalho__principal .banner__descricao .descricao__coluna2 img {
 		width: 50%;
+	}
+}
+
+@media (max-width: 550px) {
+	.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		left: 0;
+	}
+
+	.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior .navegacaoInferior__controles,
+	.cabecalho__principal .cabecalho__banner .cabecalho__navegacaoInferior .navegacaoInferior__paginas {
+		padding-top: 20px;
+		transform: translateX(-25px);
 	}
 }
