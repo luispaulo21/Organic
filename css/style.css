@@ -383,6 +383,11 @@ svg {
 		justify-content: space-between;
 	}
 
+	.cabecalho__principal .banner__descricao .descricao__coluna1 div a {
+		padding: 10px 5px;
+		margin: 0;
+	}
+
 	.cabecalho__principal .banner__descricao .descricao__coluna1 h1,
 	.cabecalho__principal .banner__descricao .descricao__coluna1 h2 {
 		z-index: 99;
