@@ -375,7 +375,12 @@ svg {
 	}
 
 	.cabecalho__principal .banner__descricao .descricao__coluna1 {
-		padding-top: 40px;
+		padding: 40px 0 0 0;
+	}
+
+	.cabecalho__principal .banner__descricao .descricao__coluna1 div {
+		width: 100%;
+		justify-content: space-between;
 	}
 
 	.cabecalho__principal .banner__descricao .descricao__coluna1 h1,
@@ -384,7 +389,7 @@ svg {
 	}
 
 	.cabecalho__principal .banner__descricao .descricao__coluna1 div .linha-divisora {
-		width: 40%;
+		display: none;
 	}
 
 	.cabecalho__principal .banner__descricao .descricao__coluna2 {
@@ -423,9 +428,5 @@ svg {
 
 	.cabecalho__principal .banner__descricao .descricao__coluna1 {
 		padding: 0;
-	}
-
-	.cabecalho__principal .banner__descricao .descricao__coluna1 div .linha-divisora {
-		display: none;
 	}
 }
